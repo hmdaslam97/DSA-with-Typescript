@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1></h1>
+<!--
+	Steps to initialize ts project
+	1, npm init -y 		=>installs package.json and add object below
+			"scripts": {
+				"build": "tsc",
+				"start": "tsc && npx live-server"
+			},
+	2, npm i -g typescript
+	3, npx tsc --init =>creates tsconfig.json file
+	4, in tsconfig.json
+			{
+				"compilerOptions": {
+					"target": "es5",
+					"module": "es6",
+					"outDir": "./dist",
+					"rootDir": "./src",
+					"strict": true
+				},
+				"include": ["src/**/*"],
+				"exclude": ["node_modules"]
+			}
+	5, create src/index.ts where you ts code lies and link it in index.html file's script tag as below
+	6, create html file as this
+
+	7, tsc -w	 => watches the ts file change
+	8, npm start => to see changes in live server
+ -->
+<script src="dist/index.js" defer></script>
+</body>
+</html>
